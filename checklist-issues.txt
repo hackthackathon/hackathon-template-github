@@ -1,0 +1,36 @@
+# Issue name ,	label , milestone
+Form an organizing committee , committee , one year
+Elect chief cat herder, committee, one year
+Figure out motivation for hack week , committee, one year
+Prepare for feedback and evaluation, feedback, one year
+Determine country and city for hack week, logistics, one year
+Pick and book a workshop venue, logistics, one year
+Make a budget, logistics fundraising, one year
+Prepare a website, logistics website, six months
+Set up contact e-mail address, logistics website, six months
+Collect organizations and individuals to advertise event to, logistics participants, six months
+Write announcement e-mail and share with community, logistics participants, six months
+Announce event on social media, logistics participants, six months
+Settle on selection criteria for participant selection, logistics participants, six months
+Set up an application or registration form, logistics participants, six months
+Select participants, participants, three months
+Assign travel funding to participants, participants fundraising, three months
+Identify for tutorial leads and/or team mentors, tutorials facilitation, three months
+build a facilitation plan, facilitation, three months
+Evaluate technology choices for synchronous/asynchronous virtual/hybrid participation, technology facilitation, three months
+Set up communication channels like Discord or Slack, technology facilitation, one month
+Set up shared software environment for participants, technology, one month
+Develop Code of Conduct and enforcement processes, facilitation, three months
+Send logistics e-mail to participants with information about travel and logistics, logistics participants, three months
+Fix schedule to its semi-final form, logistics facilitation, one month
+Set up rapid feedback survey, facilitation feedback, before event
+Prepare check-in materials like badges, facilitation logistics, before event
+Set up post-workshop feedback survey, feedback, before event
+Keep in touch with tutorial leads and team mentors, facilitation participants tutorials, during event
+Ask participants to acknowledge workshop in publications and blog posts and other outputs, facilitation, during event
+Set up virtual and physical boards for voting on break-out sessions and similar events, facilitation, before event
+Keep notes on expereinces and observations for post-workshop evaluation, feedback, during event
+Run participant survey on last day or immediately after, feedback, during event
+Evaluate the event based on observations and survey results, feedback, after event
+Debrief the event with organising committee, feedback, after event
+Keep track of event output such as papers and software and blog posts, feedback, after event
