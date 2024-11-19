@@ -18,6 +18,7 @@ project:
         - file: organizing-checklist.md
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  # Modify this section with the logos of your choice
+  options:
+    favicon: https://hackthackathon.github.io/images/navbar-logo.png
+    logo: https://hackthackathon.github.io/images/navbar-logo.png
