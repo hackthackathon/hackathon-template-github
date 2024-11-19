@@ -14,10 +14,11 @@ project:
     - file: README.md
     - title: Organizing Preparation
       children:
-        - file: how-to-edit-content.md
+        - file: getting-started.md
         - file: organizing-checklist.md
 site:
   template: book-theme
+  # Modify this section with the logos of your choice
   options:
     favicon: https://hackthackathon.github.io/images/navbar-logo.png
     logo: https://hackthackathon.github.io/images/navbar-logo.png
