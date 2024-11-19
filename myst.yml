@@ -16,6 +16,7 @@ project:
       children:
         - file: how-to-edit-content.md
         - file: organizing-checklist.md
+        - file: how-to-project-proposal.md
 site:
   template: book-theme
   # options:
