@@ -14,7 +14,7 @@ project:
     - file: README.md
     - title: Organizing Preparation
       children:
-        - file: how-to-edit-content.md
+        - file: getting-started.md
         - file: organizing-checklist.md
 site:
   template: book-theme
