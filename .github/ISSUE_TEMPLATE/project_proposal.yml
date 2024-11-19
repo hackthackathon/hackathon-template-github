@@ -1,0 +1,59 @@
+---
+name: Project Proposal
+description: Use this template for project proposals.
+title: "[Project Proposal]: "
+labels: ["project proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to submit a project proposal!
+  - type: textarea
+    id: proj_desc
+    attributes:
+      label: Project Description
+      description: Brief summary of the intent of the project.
+      placeholder: Revamp pyobis package to align with updated api.
+    validations:
+      required: false
+  - type: textarea
+    id: exp_outcome
+    attributes:
+      label: Expected Outcomes
+      description: What do you expect to get out of the project.
+      placeholder: Make a usable api query package.
+    validations:
+      required: false
+  - type: textarea
+    id: skills_required
+    attributes:
+      label: Skills required
+      description: What types of skills does the prospective contributor need?
+      placeholder: Experience with Python.
+    validations:
+      required: false
+  - type: dropdown
+    id: expertise
+    attributes:
+      label: Expertise
+      description: Identify the expertise level for project participation.
+      options:
+        - Novice
+        - Intermediate
+        - Expert
+    validations:
+      required: false
+  - type: input
+    id: lead
+    attributes:
+      label: Topic Lead(s)
+      description: Include topic lead names and GitHub handles as a comma separated list.
+    validations:
+      required: false
+  - type: textarea
+    id: links
+    attributes:
+      label: Relevant links
+      description: Include relevant links to issues/repositories/websites here.
+      placeholder: https://github.com/mgrover1/hackathon-template/issues/1
+    validations:
+      required: false
