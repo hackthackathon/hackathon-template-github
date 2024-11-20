@@ -5,10 +5,10 @@ project:
   description: Github Pages based template for hackathons
   # keywords: []
   authors:
-    - name: Main Instructor
-      orcid: 0000-0000-0000-0000
-      github: instructor
-  github: https://github.com/mgrover1/hackathon-template-github
+    - name: Instructor Name
+      orcid: XXXX-XXXX-XXXX-XXXX
+      github: username
+  github: https://github.com/your_org/hackathon-template-github
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   toc:
     - file: README.md
