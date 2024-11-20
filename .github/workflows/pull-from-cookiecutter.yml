@@ -27,10 +27,6 @@ jobs:
             Cookiecutter auto-udpate.
           labels: |
             Bot
-          assignees: |
-            MathewBiddle
-          reviewers: |
-            MathewBiddle
 
       - name: Check outputs
         if: ${{ steps.cpr.outputs.pull-request-number }}
