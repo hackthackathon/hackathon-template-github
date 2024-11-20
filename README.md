@@ -11,7 +11,7 @@ Please list your instructors and mentors below!
 
 | Instructor | Affiliation | Links |
 | :------- | ------- |:------- |
-| Main Instructor | Some University | [Github](https://github.com/instructor) |
+| Instructor Name | Lead Instructor Affiliation | [Github](https://github.com/username) |
 
 ## Schedule
 
@@ -19,4 +19,4 @@ Please list your instructors and mentors below!
 
 | Time                | Topic                     | Presenter        |
 | :---:               |    :----:                 |    :---:         |
-| 09:00 AM - 09:30 AM | Welcome/Introduction      | Main Instructor      |
+| 09:00 AM - 09:30 AM | Welcome/Introduction      | Instructor Name      |
