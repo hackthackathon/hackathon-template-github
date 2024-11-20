@@ -1,0 +1,12 @@
+{
+    "hackathon_repo_name": "hackathon-template-github",
+    "hackathon_full_name": "My Hackathon Name",
+    "hackathon_short_description": "My short description",
+    "start_date": "2024-12-01",
+    "end_date": "2024-12-01",
+    "organization_github": "your_org",
+    "lead_instructor_name": "Instructor Name",
+    "lead_instructor_affiliation": "Lead Instructor Affiliation",
+    "lead_instructor_github": "username",
+    "lead_instructor_orcid": "XXXX-XXXX-XXXX-XXXX"
+  }
