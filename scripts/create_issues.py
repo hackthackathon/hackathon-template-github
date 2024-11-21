@@ -2,13 +2,16 @@ import pandas as pd
 from github.GithubException import GithubException
 from github import Github
 import os
+from yaml import safe_load
 import numpy as np
 
 g = Github(os.environ["GITHUB_TOKEN"])
 repo = g.get_repo(os.environ["REPO_NAME"])
 
-issues = pd.read_csv("checklist-issues.txt", skiprows=1, 
-                     names=["issue", "label", "milestone"])
+# Read the issue list yaml as a pandas dataframe
+with open('organizers/checklist-issues.yaml', 'r') as f:
+    issues = pd.json_normalize(safe_load(f))
+
 issues = issues.applymap(lambda x: x.strip())
 
 
@@ -56,16 +59,18 @@ for i in issues.index:
     idx = milestone_titles.index(m)
     milestone = milestones[idx]
 
+    # Strip out fields to pass into the issue
+    description = issues.loc[i, "description"]
     title = issues.loc[i,"issue"]
-
     lname = issues.loc[i,"label"]
     lname = lname.split()
+
     label = []
     for l in lname:
         lidx = label_titles.index(l)
         label.append(labels[lidx])
     try:
-        repo.create_issue(title=title, labels=label, milestone=milestone)
+        repo.create_issue(title=title, labels=label, milestone=milestone, body=description)
 
     except GithubException as e:
         print(e)

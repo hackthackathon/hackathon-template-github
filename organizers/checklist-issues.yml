@@ -1,0 +1,128 @@
+-   issue: Form an organizing committee 
+    label: committee 
+    milestone: One Year
+    description: Form an organizing committee
+-   issue: Elect head of logistics for the event
+    label:  committee
+    milestone:  One Year
+    description: Determine who will be responsible for coordinating the event
+-   issue: Figure out motivation for the event
+    label:  committee
+    milestone:  1 Year
+    description: Determine a theme/motivation for the event 
+-   issue: Determine country and city for the event
+    label:  logistics
+    milestone:  One Year
+    description: Choose your event location, working with local organizers and taking visa/cost to travel
+-   issue: Pick and book a venue
+    label:  logistics
+    milestone:  One Year
+    description: Once a city/country is determined, book a venue for the event, likely requiring a signed contract
+-   issue: Make a budget
+    label:  logistics fundraising
+    milestone:  One Year
+    description: Create a budget for your event, taking all costs into consideration (venue, travel, food, etc.)
+-   issue: Prepare a website
+    label:  logistics website
+    milestone:  6 Months
+    description: Prepare a website - feel free to use your github-pages hosted website created by this repository.
+-   issue: Set up contact e-mail address
+    label:  logistics website
+    milestone:  6 Months
+    description: Add the lead organizer's email address to the site for contact.
+-   issue: Collect organizations and individuals to advertise event to
+    label:  logistics participants
+    milestone:  6 Months
+    description: Create a list of organizations/people who can help get the word out about your event.
+-   issue: Write announcement e-mail and share with community
+    label:  logistics participants
+    milestone:  6 Months
+    description: Write your announcement communication for the event and share with all those interested!
+-   issue: Announce event on social media
+    label:  logistics participants
+    milestone:  6 Months
+    description: Work with your social media team to advertise across different mediums.
+-   issue: Settle on selection criteria for participant selection
+    label:  logistics participants
+    milestone:  6 Months
+    description: Put together a rubric for choosing participants to attend/receive funding for your event.
+-   issue: Set up an application or registration form
+    label:  logistics participants
+    milestone:  6 Months
+    description: Create a registration form for your event, gathering all required information.
+-   issue: Select participants
+    label:  participants
+    milestone:  3 Months
+    description: Review applications and choose those who will be attending your event.
+-   issue: Assign travel funding to participants
+    label:  participants fundraising
+    milestone:  3 Months
+    description: Decide on who will receive travel funds to attend your event.
+-   issue: Identify for tutorial leads and/or team mentors
+    label:  tutorials facilitation
+    milestone:  3 Months
+    description: Put together a list of your tutorial leads and/or mentors, add them to the README.
+-   issue: Build a facilitation plan
+    label:  facilitation
+    milestone:  3 Months
+    description: Build a plan for facilitation, including how groups will form, how check-ins will work, and project outcome goals.
+-   issue: Evaluate technology choices for synchronous/asynchronous virtual/hybrid participation
+    label:  technology facilitation
+    milestone:  3 Months
+    description: Make a plan for you will involve remote participants (if the event is hybrid or virtual), for in-room, make sure technology is squared away.
+-   issue: Set up communication channels like Discord or Slack
+    label:  technology facilitation
+    milestone:  1 Month
+    description: Configure your communication channels via Slack or Discord, or some other discussion forum. You need a way for teams to communicate.
+-   issue: Set up shared software environment for participants
+    label:  technology
+    milestone:  1 Month
+    description: Configure your software environment, feel free to leverage the existing infrastructure in this repository.
+-   issue: Develop Code of Conduct and enforcement processes
+    label:  facilitation
+    milestone:  3 Months
+    description: Check in on your Code of Conduct (CODE_OF_CONDUCT.md) file and make sure enforcement information is accurate.
+-   issue: Send logistics e-mail to participants with information about travel and logistics
+    label:  logistics participants
+    milestone:  3 Months
+    description: Send your  email to instructors/participants about travel and general logistics.
+-   issue: Fix schedule to its semi-final form
+    label:  logistics facilitation
+    milestone:  1 Month
+    description: Finalize your schedule (to the best of your ability), it may still be subject to change.
+-   issue: Set up rapid feedback survey
+    label:  facilitation feedback
+    milestone:  Before the Event
+    description: Ensure you have time in your schedule to gather feedback from the survey you created.
+-   issue: Prepare check-in materials like badges
+    label:  facilitation logistics
+    milestone:  Before the Event
+    description: Put together your check-in materials checklist, including badges, local information, etc.
+-   issue: Set up post-workshop feedback survey
+    label:  feedback
+    milestone:  Before the Event
+    description: Create a survey that gathers feedback from your attendees
+-   issue: Keep in touch with tutorial leads and team mentors
+    label:  facilitation participants tutorials
+    milestone:  During the Event
+    description: Actively check in with your tutorial leads/mentors to make sure they are prepared and good to present and help attendees.
+-   issue: Ask participants to acknowledge workshop in publications and blog posts and other outputs
+    label:  facilitation
+    milestone:  During the Event
+    description: Make sure it is clear that acknowledgement is suggested/required for follow-up activities.
+-   issue: Keep notes on expereinces and observations for post-workshop evaluation
+    label:  feedback
+    milestone:  During the Event
+    description: Keep a notes document for the instructors/mentors to gather feedback as the event evolves.
+-   issue: Run participant survey on last day or immediately after
+    label:  feedback
+    milestone:  During the Event
+    description: Make sure the survey happens!
+-   issue: Evaluate the event based on observations and survey results
+    label:  feedback
+    milestone:  After the Event
+    description: Follow up with organizers and debrief; find ways to improve for the next one!
+-   issue: Keep track of event output such as papers and software and blog posts
+    label:  feedback
+    milestone:  After the Event
+    description: Put together a list of the output from the event, potentially publish an article or blog post summarizing the proceedings.
