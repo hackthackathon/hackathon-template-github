@@ -1,0 +1,40 @@
+name: Create project page and Create Pull Request
+
+on:
+  issues:
+    types:
+      - labeled
+
+
+jobs:
+  auto_new_resource_add_pr:
+    if: contains(github.event.issue.labels.*.name, 'accepted-project')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Micromamba ${{ matrix.python-version }}
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-file: environment.yml
+          init-shell: bash
+
+
+      - name: Parsing issue, generate markdown
+        shell: bash -l {0}
+        run: python scripts/generate_pr_from_issue.py
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Create new project page via GitHub Actions"
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          branch: new_project_#${{ github.event.issue.number }}
+          title: "new project PR by GHA based on issue #${{ github.event.issue.number }}"
+          body: |
+            A project that is contributed by the user through issue submission. It has triggered a GitHub Action workflow that generate this PR. Refer to issue #${{ github.event.issue.number }}.
+            Merging this PR will close #${{ github.event.issue.number }}.
+          delete-branch: true
+          labels: new project
