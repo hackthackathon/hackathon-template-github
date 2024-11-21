@@ -16,6 +16,9 @@ project:
       children:
         - file: organizers/getting-started.md
         - file: organizers/organizing-checklist.md
+    - title: Projects
+      children:
+        - pattern: 'projects/project-*'
 site:
   template: book-theme
   # Modify this section with the logos of your choice
