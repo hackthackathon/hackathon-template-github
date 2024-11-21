@@ -14,8 +14,8 @@ project:
     - file: README.md
     - title: Organizing Preparation
       children:
-        - file: getting-started.md
-        - file: organizing-checklist.md
+        - file: organizers/getting-started.md
+        - file: organizers/organizing-checklist.md
 site:
   template: book-theme
   # Modify this section with the logos of your choice
