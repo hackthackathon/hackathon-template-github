@@ -9,7 +9,7 @@ g = Github(os.environ["GITHUB_TOKEN"])
 repo = g.get_repo(os.environ["REPO_NAME"])
 
 # Read the issue list yaml as a pandas dataframe
-with open('organizers/checklist-issues.yaml', 'r') as f:
+with open('organizers/checklist-issues.yml', 'r') as f:
     issues = pd.json_normalize(safe_load(f))
 
 issues = issues.applymap(lambda x: x.strip())
