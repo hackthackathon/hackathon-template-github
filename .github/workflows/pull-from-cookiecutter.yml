@@ -12,7 +12,7 @@ jobs:
       - name: Install cookiecutter
         run: python -m pip install --user cookiecutter
       - name: Build Template
-        run: cookiecutter gh:mgrover1/hackathon-template-cookiecutter --output-dir .. --config-file .cookiecutter.json --no-input --overwrite-if-exists
+        run: cookiecutter gh:hackthackathon/hackathon-template-cookiecutter --output-dir .. --config-file .cookiecutter.json --no-input --overwrite-if-exists
       - name: Create Pull Request
         if: github.ref == 'refs/heads/main'
         id: cpr
