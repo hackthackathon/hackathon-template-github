@@ -1,4 +1,8 @@
 # This file was created automatically with `myst init --gh-pages` 🪄 💚
+# GitHub Pages must be turned on for this action to work
+# Navigate to Settings -> Pages for this repository
+# Where `Source` should be set to `GitHub Actions`
+# Then rerun this action
 
 name: MyST GitHub Pages Deploy
 on:
