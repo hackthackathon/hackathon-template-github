@@ -63,8 +63,6 @@ if __name__ == '__main__' :
         title = issue['title'].replace('[Project Proposal]: ','')
         fname = title.replace(' ','_')
 
-        path = os.path.dirname('/projects/project-{}.md'.format(fname))
-        os.makedirs(path, exist_ok=True)
-        with open('{}/project-{}.md'.format(path,fname), "w") as f:
+        with open(f'projects/project-{fname}.md', "w") as f:
             f.write('## '+title+'\n\n'+issue['body'])
-        print('wrote {}/project-{}.md'.format(path,fname))
+        print(f'wrote projects/project-{fname}.md')
