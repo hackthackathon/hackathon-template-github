@@ -29,7 +29,7 @@ def check_link_availability(test_url):
 
 if __name__ == '__main__' :
     # bioeco metadata list repo location
-    ORGNAME = "your_org"
+    ORGNAME = "hackthackathon"
     #ORGNAME = "hackthackathon"
     REPO_NAME = "hackathon-template-github"
     #REPO_NAME = "hackathon-template-github"

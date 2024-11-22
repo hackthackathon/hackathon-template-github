@@ -3,7 +3,7 @@
 ## How to Deploy on Github Pages
 By default, your website will be deployed to github pages, using the path of:
 
-your_org.github.io/hackathon-template-github
+hackthackathon.github.io/hackathon-template-github
 
 In order for this to work, you will need to follow these steps:
 
@@ -44,7 +44,7 @@ Click the Re-run jobs button, which will initiate the publishing.
 
 ### 4. Make sure your pages link is linked on your repository
 
-Go to the main page for your repository (ex. https://github.com/your_org/hackathon-template-github)
+Go to the main page for your repository (ex. https://github.com/hackthackathon/hackathon-template-github)
 
 Notice the gear logo on the right - click on that! (this should be to the right of the About section)
 
@@ -107,7 +107,7 @@ For each project, submit a Project Proposal to this repository, identifying the 
 
 To submit topics of interest use the GitHub issue form below:
 
-your_org/hackathon-template-github/issues/new/choose
+hackthackathon/hackathon-template-github/issues/new/choose
 
 1. Select the project proposal issue template.
 
