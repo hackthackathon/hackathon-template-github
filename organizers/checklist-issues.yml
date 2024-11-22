@@ -90,7 +90,7 @@
     label:  logistics facilitation
     milestone:  1 Month
     description: Finalize your schedule (to the best of your ability), it may still be subject to change.
--   issue: Set up rapid feedback survey
+-   issue: Allocate time in your schedule for feedback
     label:  facilitation feedback
     milestone:  Before the Event
     description: Ensure you have time in your schedule to gather feedback from the survey you created.
@@ -101,7 +101,7 @@
 -   issue: Set up post-workshop feedback survey
     label:  feedback
     milestone:  Before the Event
-    description: Create a survey that gathers feedback from your attendees
+    description: Create a survey that gathers feedback from your attendees. Feel free to use [this google survey template](https://docs.google.com/forms/d/e/1FAIpQLSfYOU3cED6abjWUz-NjjUOTdkSxf4P2U-V-njqQoNmydTsbPg/viewform?usp=sharing), but **DO NOT EDIT IT DIRECTLY - MAKE A COPY**
 -   issue: Keep in touch with tutorial leads and team mentors
     label:  facilitation participants tutorials
     milestone:  During the Event
