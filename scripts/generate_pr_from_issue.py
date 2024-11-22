@@ -1,9 +1,8 @@
 """
 This is a python script designed to add a PR
-based on the created issues of adding new resources
+based on the created issues of adding new projects
 
-1. include the image to the image folder
-2. modified the bioeco_list.json file with the new entry
+1. writes markdown files to projects/.
 
 """
 import os
@@ -41,7 +40,6 @@ if __name__ == '__main__' :
     # Load the contents of the event payload from GITHUB_EVENT_PATH
     if DEBUG :
         ISSUE_NUM = 7
-        # ISSUE_NUM = 59
     else :
         event_path = os.environ['GITHUB_EVENT_PATH']
         with open(event_path, 'r') as event_file:
@@ -64,12 +62,9 @@ if __name__ == '__main__' :
 
         title = issue['title'].replace('[Project Proposal]: ','')
         fname = title.replace(' ','_')
-        #f = open('../projects/{}.md'.format(fname))
-        #f.write(issue['body'])
-        #f.close()
 
-        #import os
-        path = os.path.dirname('../projects/project-{}.md'.format(fname))
+        path = os.path.dirname('/projects/project-{}.md'.format(fname))
         os.makedirs(path, exist_ok=True)
         with open('{}/project-{}.md'.format(path,fname), "w") as f:
             f.write('## '+title+'\n\n'+issue['body'])
+        print('wrote {}/project-{}.md'.format(path,fname))
