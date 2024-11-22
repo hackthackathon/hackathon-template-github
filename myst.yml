@@ -16,6 +16,7 @@ project:
       children:
         - file: organizers/getting-started.md
         - file: organizers/organizing-checklist.md
+        - file: organizers/survey-template.md
     - title: Projects
       children:
         - pattern: 'projects/project-*'
