@@ -2,7 +2,9 @@ name: Pull from cookiecutter
 
 on:
   workflow_dispatch:
-#  schedule:
+  schedule:
+    # Runs at 0000 UTC
+    - cron: "0 0 * * *"
 
 jobs:
   checkout:
