@@ -5,6 +5,9 @@ on:
     types:
       - labeled
 
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   auto_new_resource_add_pr:
