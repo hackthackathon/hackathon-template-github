@@ -6,6 +6,8 @@ on:
     # Runs at 0000 UTC
     - cron: "0 0 * * *"
 
+permissions: write-all
+
 jobs:
   checkout:
     runs-on: ubuntu-latest
