@@ -5,14 +5,11 @@ on:
     types:
       - labeled
 
+
 jobs:
   auto_new_resource_add_pr:
     if: contains(github.event.issue.labels.*.name, 'accepted-project')
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: write
-      security-events: write
     steps:
       - name: Check Out Repository
         uses: actions/checkout@v4
