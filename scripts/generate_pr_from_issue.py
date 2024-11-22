@@ -64,5 +64,5 @@ if __name__ == '__main__' :
         fname = title.replace(' ','_')
 
         with open(f'projects/project-{fname}.md', "w") as f:
-            f.write('## '+title+'\n\n'+issue['body'])
+            f.write('# '+title+'\n\n'+issue['body'])
         print(f'wrote projects/project-{fname}.md')
