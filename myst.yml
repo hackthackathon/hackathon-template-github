@@ -8,7 +8,7 @@ project:
     - name: Instructor Name
       orcid: XXXX-XXXX-XXXX-XXXX
       github: username
-  github: https://github.com/your_org/hackathon-template-github
+  github: https://github.com/hackthackathon/hackathon-template-github
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   toc:
     - file: README.md
