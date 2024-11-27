@@ -1,0 +1,197 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "GithubException",
+        "importPath": "github.GithubException",
+        "description": "github.GithubException",
+        "isExtraImport": true,
+        "detail": "github.GithubException",
+        "documentation": {}
+    },
+    {
+        "label": "Github",
+        "importPath": "github",
+        "description": "github",
+        "isExtraImport": true,
+        "detail": "github",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 8,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "safe_load",
+        "importPath": "yaml",
+        "description": "yaml",
+        "isExtraImport": true,
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "g = Github(os.environ[\"GITHUB_TOKEN\"])\nrepo = g.get_repo(os.environ[\"REPO_NAME\"])\n# Read the issue list yaml as a pandas dataframe\nwith open('organizers/checklist-issues.yml', 'r') as f:\n    issues = pd.json_normalize(safe_load(f))\nissues = issues.applymap(lambda x: x.strip())\n# create milestones\nfor m in issues['milestone'].unique():\n    try:\n        repo.create_milestone(title=m, state='open')",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "repo",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "repo = g.get_repo(os.environ[\"REPO_NAME\"])\n# Read the issue list yaml as a pandas dataframe\nwith open('organizers/checklist-issues.yml', 'r') as f:\n    issues = pd.json_normalize(safe_load(f))\nissues = issues.applymap(lambda x: x.strip())\n# create milestones\nfor m in issues['milestone'].unique():\n    try:\n        repo.create_milestone(title=m, state='open')\n    except GithubException as e:",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "issues",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "issues = issues.applymap(lambda x: x.strip())\n# create milestones\nfor m in issues['milestone'].unique():\n    try:\n        repo.create_milestone(title=m, state='open')\n    except GithubException as e:\n        if e.data[\"errors\"][0].get(\"code\", None) != \"already_exists\":\n            raise \nmilestones = repo.get_milestones()\nmilestone_titles = [m.title for m in milestones]",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "milestones",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "milestones = repo.get_milestones()\nmilestone_titles = [m.title for m in milestones]\n# create issue labels\nlabels = issues[\"label\"]\nlabels = [l.split(\" \") for l in labels]\nlabels = np.unique(np.hstack(labels))\n# seaborn colorblind palette\npal = ['0173b2',\n      'de8f05',\n      '029e73',",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "milestone_titles",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "milestone_titles = [m.title for m in milestones]\n# create issue labels\nlabels = issues[\"label\"]\nlabels = [l.split(\" \") for l in labels]\nlabels = np.unique(np.hstack(labels))\n# seaborn colorblind palette\npal = ['0173b2',\n      'de8f05',\n      '029e73',\n      'd55e00',",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "labels = issues[\"label\"]\nlabels = [l.split(\" \") for l in labels]\nlabels = np.unique(np.hstack(labels))\n# seaborn colorblind palette\npal = ['0173b2',\n      'de8f05',\n      '029e73',\n      'd55e00',\n      'cc78bc',\n      'ca9161',",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "labels = [l.split(\" \") for l in labels]\nlabels = np.unique(np.hstack(labels))\n# seaborn colorblind palette\npal = ['0173b2',\n      'de8f05',\n      '029e73',\n      'd55e00',\n      'cc78bc',\n      'ca9161',\n      'fbafe4',",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "labels = np.unique(np.hstack(labels))\n# seaborn colorblind palette\npal = ['0173b2',\n      'de8f05',\n      '029e73',\n      'd55e00',\n      'cc78bc',\n      'ca9161',\n      'fbafe4',\n      '949494',",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "pal",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "pal = ['0173b2',\n      'de8f05',\n      '029e73',\n      'd55e00',\n      'cc78bc',\n      'ca9161',\n      'fbafe4',\n      '949494',\n      'ece133',\n      '56b4e9']",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "labels = repo.get_labels()\nlabel_titles = [l.name for l in labels]\n# create issues\nfor i in issues.index:\n    m = issues.loc[i, \"milestone\"]\n    idx = milestone_titles.index(m)\n    milestone = milestones[idx]\n    # Strip out fields to pass into the issue\n    description = issues.loc[i, \"description\"]\n    title = issues.loc[i,\"issue\"]",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "label_titles",
+        "kind": 5,
+        "importPath": "scripts.create_issues",
+        "description": "scripts.create_issues",
+        "peekOfCode": "label_titles = [l.name for l in labels]\n# create issues\nfor i in issues.index:\n    m = issues.loc[i, \"milestone\"]\n    idx = milestone_titles.index(m)\n    milestone = milestones[idx]\n    # Strip out fields to pass into the issue\n    description = issues.loc[i, \"description\"]\n    title = issues.loc[i,\"issue\"]\n    lname = issues.loc[i,\"label\"]",
+        "detail": "scripts.create_issues",
+        "documentation": {}
+    },
+    {
+        "label": "check_link_availability",
+        "kind": 2,
+        "importPath": "scripts.generate_pr_from_issue",
+        "description": "scripts.generate_pr_from_issue",
+        "peekOfCode": "def check_link_availability(test_url):\n    \"\"\"\n    check url validity\n    \"\"\"\n    try:\n        resp = requests.get(test_url)\n        if resp.status_code >= 200 and resp.status_code < 300:\n            print(f\"The link '{test_url}' is available.\")\n        else:\n            print(f\"The link '{test_url}' returned a status code: {resp.status_code}\")",
+        "detail": "scripts.generate_pr_from_issue",
+        "documentation": {}
+    }
+]
