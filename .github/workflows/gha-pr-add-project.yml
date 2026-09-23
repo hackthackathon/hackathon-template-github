@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check Out Repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Micromamba ${{ matrix.python-version }}
-        uses: mamba-org/setup-micromamba@v2
+        uses: mamba-org/setup-micromamba@v3
         with:
           environment-file: environment.yml
           init-shell: bash
